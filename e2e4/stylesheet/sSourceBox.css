@@ -1,0 +1,113 @@
+#sSourceBox{
+	position: absolute;
+	background: #F4F4F4;
+	z-index: 999;
+	box-shadow: 0 0 2px 0 #D0D0D0;
+	top: 30px;
+}
+#sSourceBox #boxTitle{
+	position: relative;
+	top: 0px;
+	left:0px;
+	height: 20px;
+	background:#E7E7E7;
+	color: #7B7B7F;
+	font-weight: normal;
+	padding:7px 10px;
+	font-family: 'Open Sans';
+	letter-spacing: 0.5px;
+	font-size: 16px;
+	border-bottom: 1px solid #E0E0E0;
+	cursor: default;
+}
+#sSourceBox #boxTitle #boxClose{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	right: 2.5px;
+	top: 2.5px;
+	cursor: pointer;
+	border-radius: 2px;
+	transition: all 0.5s ease 0s;
+	background: url(../image/closeIcon.png) no-repeat center;
+	border-radius: 50%;
+}
+#sSourceBox #boxTitle #boxClose:hover{
+	transition: all 0.5s ease 0s;
+	transform:rotate(180deg);
+	border-radius: 0%;
+	background-color: rgba(200,200,200,0.5) !important;
+}
+#sSourceBox #boxContent{
+	width: 100%;
+	position: relative;
+	overflow: auto;
+}
+#sSourceBox #boxContent .contentItem{
+	width: 100%;
+	border-bottom:1px solid #E0E0E0;
+}
+#sSourceBox #boxContent .contentItem input{
+	width: 92%;
+	background:rgba(0, 0, 0, 0.03);
+	margin: 10px 2%;
+	padding: 10px 2%;
+	transition: all 0.5s ease 0s;
+	color: rgb(160, 160, 164);
+
+}
+#sSourceBox #boxContent .contentItem input:hover{
+	background:rgba(0, 0, 0, 0.05);
+	transition: all 0.5s ease 0s;
+}
+#sSourceBox #boxContent .contentItem input:focus{
+	transition: all 0.5s ease 0s;
+	/*animation: inputFocusAnimation 1s infinite;*/
+}
+@keyframes inputFocusAnimation {
+    0% {
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        transition: all 0.2s ease 0s;
+    }
+}
+#sSourceBox #boxContent .contentItem span{
+	margin-left: 2%;
+	padding-left: 2%;
+	margin-top: 10px;
+	display: inline-block;
+	color: rgb(160, 160, 164);
+}
+#sSourceBox #boxContent .contentItem .boxCheckBox{
+	width: 60px;
+	height: 25px;
+	margin: 10px auto;
+	background:#E7E7E7;
+	position: relative;
+	border-radius: 2px;
+}
+#sSourceBox #boxContent .contentItem .boxCheckBox div{
+	height: 21px;
+	position: absolute;
+	width: 28px;
+	background: rgb(123, 123, 127) none repeat scroll 0% 0%;
+	top: 2px;
+	left: 2px;
+	border-radius: 2px;
+	cursor: pointer;
+	transition: all 0.5s ease 0s;
+}
+#sSourceBox #boxContent .contentItem .boxCheckBox[value="false"] div{
+	background-color: rgba(123, 123, 127, 0.6) ;
+}
+#sSourceBox #boxContent .contentItem .boxMidContent{
+	width: 96%;
+	overflow: hidden;
+	padding: 10px 2%;
+}
+#sSourceBox #boxContent .contentItem input[type="color"]{
+	width: 92%;
+	margin: 10px 4%;
+	transition: all 0.5s ease 0s;
+	height: 27px;
+	padding: 0px;
+}
