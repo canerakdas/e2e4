@@ -1,22 +1,7 @@
 ﻿document.addEventListener('DOMContentLoaded', function(){
-	//
-	// __________E2:E4__________
-	// |π_|Ω_|λ_|ε_|ĉ_|λ_|Ω_|π_| 8
-	// |x_|x_|x_|x_|x_|x_|x_|x_| 7
-	// |__|__|__|__|__|__|__|__| 6
-	// |__|__|__|__|__|__|__|__| 5
-	// |__|__|__|__|_x|__|__|__| 4
-	// |__|__|__|__|__|__|__|__| 3
-	// |_x|_x|_x|_x|__|_x|_x|_x| 2
-	// |_π|_Ω|_λ|_ε|_ĉ|_λ|_Ω|_π| 1
-	//   A  B  C  D  E  F  G  H
-	//
-	// Caner Akdaş
-	// 
-	//@line:939
 	/**
 	 * E2:E4 Constructor
-	 * @param  {method} config 
+	 * @param  {object} config 
 	 * @return {bool}        
 	 */
 	 function e2e4(config){
@@ -36,7 +21,6 @@
 	 		else{
 	 			this.resize();
 	 		}
-	 		
 	 	}
 	 	catch(error){
 	 		this.log(error.message,error.lineNumber,error.fileName,error.__proto__);
@@ -54,33 +38,33 @@
 	 };
 
 	 e2e4.lang={
-	 	NODE:"Düğüm",
-	 	LINE:"Kenar",
-	 	ARC:"Çoklu Kenar",
-	 	DEFAULT_FILE_NAME:"Başlıksız Çizge 1",
-	 	WIDTH:"Genişlik",
-	 	HEIGHT:"Yükseklik",
-	 	OK:"Tamam",
-	 	KOALA_RESIZE_TITLE:"Çizgeyi Boyutlandır",
-	 	NODE_COLOR:"Düğüm Rengi",
-	 	NODE_TOLERANCE:"Düğüm Toleransı",
-	 	NODE_SIZE:"Düğüm Yarıçapı",
-	 	LAYER_TITLE:"Katmanlar",
-	 	LINE_SIZE:"Kenar Kalınlığı",
-	 	LINE_TOLERANCE:"Düğüm Toleransı",
-	 	LINE_COLOR:"Kenar Rengi",
-	 	RULER_SIZE:"Çizgi Kalınlığı",
-	 	RULER_X_LINE_SPACE:"Yatay Çizgi Boşluğu",
-	 	RULER_Y_LINE_SPACE:"Dikey Çizgi Boşluğu",
-	 	RULER_X_LINE_COLOR:"Yatay Çizgi Rengi",
-	 	RULER_Y_LINE_COLOR:"Dikey Çizgi Rengi",
-	 	RULLER_OPTIONS:"Cetvel Ayarları",
-	 	ARC_LINE_SIZE:"Eğri Kalınlığı",
-	 	ARC_LINE_COLOR:"Eğri Rengi",
-	 	ARC_CPX1:'Eğri Kontrol Noktası X1',
-	 	ARC_CPY1:'Eğri Kontrol Noktası Y1',
-	 	ARC_CPX2:'Eğri Kontrol Noktası X2',
-	 	ARC_CPY2:'Eğri Kontrol Noktası Y2',
+	 	NODE:"Node",
+	 	LINE:"Edge",
+	 	ARC:"Arc",
+	 	DEFAULT_FILE_NAME:"Graph 1",
+	 	WIDTH:"Graph width",
+	 	HEIGHT:"Graph height",
+	 	OK:"OK",
+	 	KOALA_RESIZE_TITLE:"Resize the graph",
+	 	NODE_COLOR:"Node color",
+	 	NODE_TOLERANCE:"Node tolerance",
+	 	NODE_SIZE:"Node size",
+	 	LAYER_TITLE:"Layers",
+	 	LINE_SIZE:"Edge size",
+	 	LINE_TOLERANCE:"Edge Tolerance",
+	 	LINE_COLOR:"Edge Color",
+	 	RULER_SIZE:"Ruler size",
+	 	RULER_X_LINE_SPACE:"Horizontal line space",
+	 	RULER_Y_LINE_SPACE:"Vertical line space",
+	 	RULER_X_LINE_COLOR:"Horizontal line color",
+	 	RULER_Y_LINE_COLOR:"Vertical line color",
+	 	RULLER_OPTIONS:"Ruller options",
+	 	ARC_LINE_SIZE:"Arc size",
+	 	ARC_LINE_COLOR:"Arc color",
+	 	ARC_CPX1:'Arc control point X1',
+	 	ARC_CPY1:'Arc control point Y1',
+	 	ARC_CPX2:'Arc control point X2',
+	 	ARC_CPY2:'Arc control point Y2',
 	 };
 
 	 e2e4.keycodes={

@@ -28,10 +28,15 @@
 #ui-toolbox:hover{
 }
 #ui-toolbox #toolbox-movable{
-    height: 14px;
-    background:  rgba(183, 183, 183, 0.26);
-    cursor: move;
-    opacity: 0.7;
+height: 14px;
+
+background: url(../image/dotted.png) repeat;
+
+cursor: move;
+
+opacity: 0.7;
+
+margin: 2px 3px;
 }
 #ui-toolbox ul{
     margin-top: 5px;
@@ -80,7 +85,9 @@
         transition: all 0.5s ease;
     }
 }
-
+#ui-toolbox ul #toolbox-select{
+    background: url(../image/arrow.png) no-repeat center;
+}
 #ui-toolbox ul #toolbox-arrow{
     background: url(../image/arrow.png) no-repeat center;
 }
